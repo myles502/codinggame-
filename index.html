@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-     <title>
-        <title>CSS Box Styling</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="/Users/michaelmagallanes/Desktop/homework/codinggame-/#style.css" />  
-        </title>
-    </head>
-<body>
- <header>
-    <div class = "large-font"> <b>CODING QUIZ!!!</b></div>
-    <button class = "start-button"> Start </button>
- </header>
- <script src="/script.js"></script>
-</body>
- </html>
+  <head>
+    <title>CSS Box Styling</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href=".style.css" />
+  </head>
+  <body>
+    <header>
+      <div class= "large-font">Coding Game</div>
+      <button id ="start-button">Start</button>
+    </header>
+ <h2> Directions </h2>
+ <p>You will have 100 seconds to complete this quiz, everytime you select a correct answer you will get 10 seconds more added to your time. If you are incorrect, you will lose 10 seconds. Points and total will be recorded and displayed at the end of quiz and or total time. </p>
+    <main>
+      <section>
+        <div class="card word-guess">
+         <ul type = "1" <div class="large-font word-blanks">What does html stand for?</div> </ul>
+         <li> <button id ="question-one">hyper text markup language</button> </li>
+        <li> <button id ="question-two">nothing</button> </li>
+      <li> <button id ="question-three">the matrix</button> </li> 
+      
+
+
+       </div>
+      </section>
+
+      <section>
+        <div class="card results">
+          <div class = "win-loss-container">
+          <div>
+          <h2>High Score: <span class="win">0 </span> </h2>
+          
+        </div>
+        <!-- bonus: uncomment the reset button and add code to reset scores when its clicked -->
+        <!-- <button class="reset-button">Reset Score</button> -->
+      </div>
+          <div class= "card timer">
+            <div class = "timer-text">
+            <div class="large-font timer-count">100</div>
+            <h3 class = "seconds">
+          </div>
+        
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
